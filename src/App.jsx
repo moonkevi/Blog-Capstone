@@ -1,19 +1,29 @@
+
+import { Routes, Route } from 'react-router-dom';
+
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import FeaturedArticles from './components/FeaturedArticles';
-import LatestArticles from './components/LatestArticles';
 import Footer from './components/Footer';
 
+import Home from './pages/Home';
+import Articles from './pages/Articles';
+import About from './pages/About';
+import Contact from './pages/Contact';
+
 function App() {
-   return (
-      <div>
-         <Navbar />
-         <Hero />
-         <FeaturedArticles />
-         <LatestArticles />
-         <Footer />
-      </div>
-   );
+  return (
+    <div>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/articles" element={<Articles />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

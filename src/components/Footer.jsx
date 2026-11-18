@@ -11,12 +11,12 @@ function Footer() {
           Stories that inspire. Ideas that matter.
         </p>
 
-        <div className="footer-links">
+        {/* <div className="footer-links">
           <a href="/">Home</a>
           <a href="/articles">Articles</a>
           <a href="/about">About</a>
           <a href="/contact">Contact</a>
-        </div>
+        </div> */}
       </div>
 
       <div className="footer-bottom">

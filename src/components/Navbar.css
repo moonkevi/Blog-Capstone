@@ -4,6 +4,7 @@
   align-items: center;
   padding: 22px 7%;
   background-color: #f8f6f1;
+  position: relative;
 }
 
 .logo h2 {
@@ -20,6 +21,7 @@
   display: flex;
   gap: 35px;
   list-style: none;
+  /* background-color: yellow; */
 }
 
 .nav-links li {
@@ -46,8 +48,6 @@
   background-color: #b78b56;
 }
 
-/* Hamburger button */
-
 .menu-toggle {
   display: none;
   background: none;
@@ -57,43 +57,43 @@
 }
 
 /* Mobile responsive design */
-
 @media (max-width: 768px) {
+
+  .navbar {
+    position: relative;
+  }
+
   .menu-toggle {
     display: block;
+    z-index: 11;
+  }
+
+  .nav-button {
+    display: none;
   }
 
   .nav-links {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f8f6f1;
+    padding: 20px 7%;
+    box-sizing: border-box;
+    z-index: 10;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .nav-links.active {
     display: flex;
-    flex-direction: column;
   }
 }
 
-
-
-
-.navbar {
-  position: relative;
-}
-
-.nav-links {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: #f8f6f1;
-  padding: 20px 7%;
-  box-sizing: border-box;
-  z-index: 10;
-}
-
-.nav-links.active {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+@media (min-width: 769px) {
+  .navbar .nav-links {
+    display: flex !important;
+    position: static !important;
+  }
 }
