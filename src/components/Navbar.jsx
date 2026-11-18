@@ -1,33 +1,62 @@
-
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  return (
-    <nav className="navbar">
-      <div className="logo">
-        <h2>THE JOURNAL<span>.</span></h2>
-      </div>
+   const [menuOpen, setMenuOpen] = useState(false);
 
-     <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-        <li>Home</li>
-        <li>Articles</li>
-        <li>Categories</li>
-        <li>About</li>
-      </ul>
+   function closeMenu() {
+      setMenuOpen(false);
+   }
 
-      <div className="nav-button">
-        <button>Let's Talk</button>
-      </div>
-      <button
-  className="menu-toggle"
-  onClick={() => setMenuOpen(!menuOpen)}
->
-  ☰
-</button>
-    </nav>
-  );
+   return (
+      <nav className="navbar">
+         <div className="logo">
+            <Link to="/" onClick={closeMenu}>
+               <h2>
+                  THE JOURNAL<span>.</span>
+               </h2>
+            </Link>
+         </div>
+
+         <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
+            <li>
+               <Link to="/" onClick={closeMenu}>
+                  Home
+               </Link>
+            </li>
+            <li>
+               <Link to="/articles" onClick={closeMenu}>
+                  Articles
+               </Link>
+            </li>
+            <li>
+               <Link to="/categories" onClick={closeMenu}>
+                  Categories
+               </Link>
+            </li>
+            <li>
+               <Link to="/about" onClick={closeMenu}>
+                  About
+               </Link>
+            </li>
+         </ul>
+
+         <div className="nav-button">
+            <Link to="/contact" onClick={closeMenu}>
+               <button>Let's Talk</button>
+            </Link>
+         </div>
+
+         <button
+            className="menu-toggle"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle navigation"
+         >
+            {menuOpen ? '✕' : '☰'}
+         </button>
+      </nav>
+   );
 }
 
 export default Navbar;
