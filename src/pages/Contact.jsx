@@ -1,4 +1,4 @@
-
+import Faq from '../components/Faq';
 
 import { useState } from 'react';
 import './Contact.css';
@@ -212,7 +212,7 @@ function Contact() {
         <p>A SPACE FOR STORIES, IDEAS AND CONNECTIONS.</p>
         <h2>We look forward to hearing from you.</h2>
       </section>
-
+            <Faq />
     </main>
   );
 }
