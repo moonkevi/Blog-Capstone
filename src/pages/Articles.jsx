@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import BlogCard from '../components/BlogCard';
 import './Articles.css';
@@ -43,7 +44,7 @@ const articles = [
     category: 'Inspiration',
     title: 'Finding Inspiration in Everyday Life',
     description: 'Sometimes the most beautiful inspiration comes from ordinary moments around us.',
-    image: '/Images/food3.jpg',
+    image: '/Images/inspiration.jpg',
   },
 ];
 
@@ -147,6 +148,7 @@ function Articles() {
             filteredArticles.map((article) => (
               <BlogCard
                 key={article.id}
+                id={article.id}
                 image={article.image}
                 category={article.category}
                 title={article.title}

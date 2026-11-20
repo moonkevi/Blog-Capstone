@@ -1,3 +1,4 @@
+
 import BlogCard from './BlogCard';
 import './LatestArticles.css';
 
@@ -14,7 +15,9 @@ function LatestArticles() {
       </div>
 
       <div className="latest-grid">
+
         <BlogCard
+          id="2"
           image="/Images/travel2.jpg"
           category="Travel"
           title="Discovering New Places"
@@ -22,6 +25,7 @@ function LatestArticles() {
         />
 
         <BlogCard
+          id="3"
           image="/Images/food2.jpg"
           category="Food"
           title="The Joy of Good Food"
@@ -29,11 +33,13 @@ function LatestArticles() {
         />
 
         <BlogCard
+          id="1"
           image="/Images/fashion2.jfif"
           category="Fashion"
           title="Creating Your Own Style"
           description="Learn how small fashion choices can express your personality."
         />
+
       </div>
 
     </section>
@@ -41,3 +47,4 @@ function LatestArticles() {
 }
 
 export default LatestArticles;
+

@@ -1,3 +1,4 @@
+
 import BlogCard from './BlogCard';
 import './FeaturedArticles.css';
 
@@ -19,31 +20,35 @@ function FeaturedArticles() {
       <div className="featured-grid">
 
         <BlogCard
-          image="/Images/fashion.jpg"
+          id="1"
+          image="/Images/fashion3.jpg"
           category="Fashion"
-          title="The Art of Personal Style"
-          description="Discover how to express your personality through fashion and everyday style."
+          title="Building a Timeless Wardrobe"
+          description="Discover how to create a wardrobe that reflects your personality and never goes out of style."
         />
 
         <BlogCard
-          image="/Images/food.jpg"
+          id="3"
+          image="/Images/food3.jpg"
           category="Food"
-          title="A Taste of Everyday Life"
-          description="Explore delicious meals and discover the beauty of good food."
+          title="The Secret to Enjoying Simple Meals"
+          description="Explore the beauty of everyday cooking and how simple ingredients can create wonderful meals."
         />
 
         <BlogCard
-          image="/Images/lifestyle.jpg"
+          id="4"
+          image="/Images/lifestyle3.jpg"
           category="Lifestyle"
-          title="Finding Beauty in Small Things"
-          description="Sometimes the smallest moments bring the greatest happiness."
+          title="Creating a Life You Love"
+          description="Small everyday choices can help you create a more meaningful and balanced lifestyle."
         />
 
         <BlogCard
-          image="/Images/travel.jpg"
+          id="2"
+          image="/Images/travel3.jpg"
           category="Travel"
-          title="The World Is Waiting"
-          description="Explore new destinations, experiences and unforgettable adventures."
+          title="The Beauty of Exploring New Places"
+          description="Discover new destinations, different cultures and experiences that make every journey special."
         />
 
       </div>
@@ -53,3 +58,5 @@ function FeaturedArticles() {
 }
 
 export default FeaturedArticles;
+
+

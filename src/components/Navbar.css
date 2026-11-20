@@ -7,6 +7,9 @@
   position: relative;
 }
 
+.navbar a{
+  text-decoration: none;
+}
 .logo h2 {
   font-size: 24px;
   letter-spacing: 2px;
@@ -28,6 +31,7 @@
   font-size: 15px;
   color: #444;
   cursor: pointer;
+ text-decoration: none;
   transition: color 0.3s ease;
 }
 

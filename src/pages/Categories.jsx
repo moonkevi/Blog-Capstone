@@ -8,7 +8,7 @@ function Categories() {
       name: 'Fashion & Style',
       description:
         'Explore personal style, timeless outfits, fashion trends and the art of expressing yourself through clothing.',
-      image: '/Images/fashion.jpg',
+      image: '/Images/fsh4.jpg',
       slug: 'Fashion',
     },
     {
@@ -16,7 +16,7 @@ function Categories() {
       name: 'Food & Culture',
       description:
         'Discover inspiring recipes, food traditions and the stories behind the meals we enjoy.',
-      image: '/Images/food.jpg',
+      image: '/Images/food4.jpg',
       slug: 'Food',
     },
     {
@@ -24,7 +24,7 @@ function Categories() {
       name: 'Travel & Places',
       description:
         'Explore destinations, different cultures and experiences that make the world interesting.',
-      image: '/Images/travel.jpg',
+      image: '/Images/travel4.jpg',
       slug: 'Travel',
     },
     {
@@ -32,7 +32,7 @@ function Categories() {
       name: 'Everyday Living',
       description:
         'Ideas for creating a meaningful, balanced and beautiful everyday life.',
-      image: '/Images/lifestyle.jpg',
+      image: '/Images/life4.jpg',
       slug: 'Lifestyle',
     },
     {
@@ -40,7 +40,7 @@ function Categories() {
       name: 'Personal Growth',
       description:
         'Stories about self-development, building good habits and becoming your best self.',
-      image: '/Images/travel2.jpg',
+      image: '/Images/growth4.jpg',
       slug: 'Personal Growth',
     },
     {
@@ -48,7 +48,7 @@ function Categories() {
       name: 'Inspiration',
       description:
         'Thought-provoking ideas and stories that encourage you to see life differently.',
-      image: '/Images/food2.jpg',
+      image: '/Images/insp4.jpg',
       slug: 'Inspiration',
     },
   ];

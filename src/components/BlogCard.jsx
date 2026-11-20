@@ -1,6 +1,8 @@
+
+import { Link } from 'react-router-dom';
 import './BlogCard.css';
 
-function BlogCard({ image, category, title, description }) {
+function BlogCard({ id, image, category, title, description }) {
   return (
     <article className="blog-card">
 
@@ -18,7 +20,9 @@ function BlogCard({ image, category, title, description }) {
           {description}
         </p>
 
-        <a href="#">Read More →</a>
+        <Link to={`/blog/${id}`} className="read-more">
+          Read More →
+        </Link>
 
       </div>
 
@@ -27,3 +31,4 @@ function BlogCard({ image, category, title, description }) {
 }
 
 export default BlogCard;
+

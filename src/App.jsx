@@ -1,4 +1,3 @@
-
 import { Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
@@ -9,23 +8,27 @@ import Articles from './pages/Articles';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Categories from './pages/Categories';
+import BlogDetails from './pages/BlogDetails';
 
 function App() {
-  return (
-    <div>
-      <Navbar />
+   return (
+      <div>
+         <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/articles" element={<Articles />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/categories" element={<Categories />} />
-      </Routes>
+         <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/articles" element={<Articles />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/categories" element={<Categories />} />
+            <Route path="/blog/:id" element={<BlogDetails />} />
+         </Routes>
+           
 
-      <Footer />
-    </div>
-  );
+         <Footer />
+      </div>
+        
+   );
 }
 
 export default App;
