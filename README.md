@@ -1,16 +1,76 @@
-# React + Vite
+# The Journal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the project.
 
-Currently, two official plugins are available:
+The Journal is a modern digital magazine website designed to share stories, ideas and inspiration across different areas of everyday life.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The website covers topics such as fashion, travel, food, lifestyle and personal growth. It provides readers with an easy and enjoyable way to discover and explore articles.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive homepage.
+- Featured and latest articles.
+- Article search functionality.
+- Category filtering.
+- Individual article detail pages.
+- About and Contact pages.
+- FAQ section with interactive accordion.
+- Responsive navigation and footer.
 
-## Expanding the ESLint configuration
+## Technologies used.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- React Router DOM
+- Lucide React
+
+## Installation and Setup
+
+1. Clone the repository:
+
+```bash
+git clone YOUR_REPOSITORY_LINK
+```
+
+2. Navigate into the project folder:
+
+```bash
+cd react-crash-2026
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+5. Open the local URL provided in your terminal.
+
+## Usage
+
+Visitors can browse articles, search for specific stories, filter content by category and read full articles by clicking the Read More link.
+
+They can also learn about The Journal, contact the team and explore frequently asked questions.
+
+## Future Improvements
+
+- Backend and database integration.
+- Admin dashboard for managing articles.
+- User authentication.
+- Newsletter subscription.
+- Reader comments and feedback.
+
+## Author
+
+Developed by: MUTONIWASE Kevine
+
+
+
