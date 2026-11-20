@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
-import './FAQ.css';
+import './Faq.css';
 
 const questions = [
   {
